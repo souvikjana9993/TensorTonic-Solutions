@@ -6,4 +6,4 @@ def remove_stopwords(tokens, stopwords):
     for i in tokens:
         if i not in stopwords:
           j.append(i)  
-    return j
+    return [i for i in tokens if i not in stopwords]
